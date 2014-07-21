@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Web
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitio.WebApi", "Monitio.WebApi\Monitio.WebApi.csproj", "{1E24B78B-CACE-4F27-B8AD-E77D98647A97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitio.Common", "Monitio.Common\Monitio.Common.csproj", "{FF918F11-D6B0-4B7A-9F32-669E4570FDEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitio.Domain", "Monitio.Domain\Monitio.Domain.csproj", "{C171D18A-4A20-4A8F-8935-44E65223A8F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8C1F10FF-8C2A-4776-BB0B-60D826E38ACA}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitio.Repository", "Monitio.Repository\Monitio.Repository.csproj", "{31C58F55-5F91-4C4A-AD72-EE9214A9C42C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitio.Model", "Monitio.Model\Monitio.Model.csproj", "{9F72ADF8-49F0-422B-A359-221E6F6596B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E24B78B-CACE-4F27-B8AD-E77D98647A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E24B78B-CACE-4F27-B8AD-E77D98647A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E24B78B-CACE-4F27-B8AD-E77D98647A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E24B78B-CACE-4F27-B8AD-E77D98647A97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF918F11-D6B0-4B7A-9F32-669E4570FDEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF918F11-D6B0-4B7A-9F32-669E4570FDEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF918F11-D6B0-4B7A-9F32-669E4570FDEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF918F11-D6B0-4B7A-9F32-669E4570FDEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C171D18A-4A20-4A8F-8935-44E65223A8F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C171D18A-4A20-4A8F-8935-44E65223A8F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C171D18A-4A20-4A8F-8935-44E65223A8F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C171D18A-4A20-4A8F-8935-44E65223A8F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31C58F55-5F91-4C4A-AD72-EE9214A9C42C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31C58F55-5F91-4C4A-AD72-EE9214A9C42C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31C58F55-5F91-4C4A-AD72-EE9214A9C42C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31C58F55-5F91-4C4A-AD72-EE9214A9C42C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F72ADF8-49F0-422B-A359-221E6F6596B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F72ADF8-49F0-422B-A359-221E6F6596B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F72ADF8-49F0-422B-A359-221E6F6596B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F72ADF8-49F0-422B-A359-221E6F6596B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
