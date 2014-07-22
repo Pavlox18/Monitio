@@ -20,6 +20,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitio.Repository", "Monit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitio.Model", "Monitio.Model\Monitio.Model.csproj", "{9F72ADF8-49F0-422B-A359-221E6F6596B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitio.InstantMessages", "Monitio.InstantMessages\Monitio.InstantMessages.csproj", "{2E15B898-C7A6-4492-B8C2-D72AC56E51B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitio.InstantMessages.SelfHost", "Monitio.InstantMessages.SelfHost\Monitio.InstantMessages.SelfHost\Monitio.InstantMessages.SelfHost.csproj", "{E7CF09FC-D746-4853-BA28-1B3186D648D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +50,14 @@ Global
 		{9F72ADF8-49F0-422B-A359-221E6F6596B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F72ADF8-49F0-422B-A359-221E6F6596B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F72ADF8-49F0-422B-A359-221E6F6596B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E15B898-C7A6-4492-B8C2-D72AC56E51B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E15B898-C7A6-4492-B8C2-D72AC56E51B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E15B898-C7A6-4492-B8C2-D72AC56E51B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E15B898-C7A6-4492-B8C2-D72AC56E51B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7CF09FC-D746-4853-BA28-1B3186D648D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7CF09FC-D746-4853-BA28-1B3186D648D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7CF09FC-D746-4853-BA28-1B3186D648D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7CF09FC-D746-4853-BA28-1B3186D648D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
