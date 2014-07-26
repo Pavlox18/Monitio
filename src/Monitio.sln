@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitio.InstantMessages", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitio.InstantMessages.SelfHost", "Monitio.InstantMessages.SelfHost\Monitio.InstantMessages.SelfHost\Monitio.InstantMessages.SelfHost.csproj", "{E7CF09FC-D746-4853-BA28-1B3186D648D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitio.Common.Tests", "Monitio.Common.Tests\Monitio.Common.Tests.csproj", "{C92C150E-7D39-4291-A06E-FCF89432A3DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{E7CF09FC-D746-4853-BA28-1B3186D648D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7CF09FC-D746-4853-BA28-1B3186D648D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7CF09FC-D746-4853-BA28-1B3186D648D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92C150E-7D39-4291-A06E-FCF89432A3DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92C150E-7D39-4291-A06E-FCF89432A3DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92C150E-7D39-4291-A06E-FCF89432A3DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92C150E-7D39-4291-A06E-FCF89432A3DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
