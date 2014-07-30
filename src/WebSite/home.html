@@ -1,1 +1,14 @@
 <span>HOME</span>
+<div id="calendar"></div>
+
+<div id="eventForm" title="Create new event"> 
+  <form>
+    <fieldset>
+      <label for="eventName">Event name</label>
+      <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all">
+ 
+      <!-- Allow form submission with keyboard without duplicating the dialog button -->
+      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+    </fieldset>
+  </form>
+</div>

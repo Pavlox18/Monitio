@@ -29,6 +29,12 @@ MonitioApp.controller('MonitioAppController', ['$scope', '$location', '$rootScop
             $location.path('/logon');
         }
     });
+    
+    $scope.isUserLogged = function()
+    {
+        if($rootScope.currentUser) return true;
+        return false;
+    }
 }]);
 
 MonitioApp.controller('LogonController', ['$scope', '$rootScope', '$location', 'AuthService', function($scope, $rootScope, $location, AuthService) {
@@ -50,21 +56,57 @@ MonitioApp.controller('LogonController', ['$scope', '$rootScope', '$location', '
   };
 }]);
 
-MonitioApp.controller('HomeController', ['$scope', function($scope) {}]);
+MonitioApp.controller('HomeController', ['$scope', '$rootScope', function($scope, $rootScope) {
+    initializeFullCalendar();
+    $scope.addNewEventWindow = initializeDialogs();
+    $rootScope.fullCalendar = $('#calendar').data("fullCalendar").getCalendar();
+    var addEvent = function() {
+        $rootScope.fullCalendar.addEventSource([{title: 'event2', start: '2014-07-29'}]);
+    };
+    
+    var bindDayClickEvent = function() {
+        $rootScope.fullCalendar.options.dayClick = function() {$scope.addNewEventWindow.dialog("open");}
+    };
+    
+    addEvent();
+    bindDayClickEvent();
+}]);
 
 MonitioApp.factory('AuthService', function() {
     this.login = function(credentials) {
     }
 });
 
-MonitioApp.factory('Session', function($http) {
-  var Session = {
-    data: {}
-  };
-  Session.updateSession();
-  return Session; 
-});
+function initializeFullCalendar()
+{
+    $('#calendar').fullCalendar({
+        header: {
+				left: 'prev,next',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			},
+        events:[{title: 'event1', start : '2014-07-30'}],
+        dayClick: function() { alert('day click');}
+        
+    });
+}
 
-$(function() {
-    $("input[type='submit']").click(function(event) { event.preventDefault(); });
-});
+function initializeDialogs() {
+var dialog = $( "#eventForm" ).dialog({
+      autoOpen: false,
+      height: 300,
+      width: 350,
+      modal: true,
+      buttons: {
+        "Add new event": function() { return true; },
+        Cancel: function() {
+          dialog.dialog( "close" );
+        }
+      },
+      close: function() {
+        //form[ 0 ].reset();
+        //allFields.removeClass( "ui-state-error" );
+      }
+    });
+    return dialog;
+}

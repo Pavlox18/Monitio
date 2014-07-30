@@ -10,8 +10,15 @@
         <!--<script src="http://localhost:8080/signalr/hubs"></script>-->
         
         <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/moment.min.js"></script>
+        <script src="./js/jquery-ui.custom.min.js"></script>
+        <script src="./js/fullcalendar.min.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
         <link rel="stylesheet" href="./css/bootstrap-flatly.min.css">
         <link rel="stylesheet" href="./css/Monitio.css">
+        <link rel="stylesheet" href="./css/fullcalendar.css">
+        <link rel="stylesheet" href="./css/fullcalendar.print.css">
+        <link rel="stylesheet" href="./css/jquery-ui.min.css">
         
     <title>Monitio</title>
     </head>
@@ -28,7 +35,7 @@
               <a href="#" class="navbar-brand">Monitio</a>
             </div>
             <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-              <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav" ng-show="isUserLogged()">
                 <li class="active">
                   <a href="#home">Home</a>
                 </li>
@@ -51,7 +58,6 @@
         <div class="bs-docs-header" id="content">
       <div class="container">
         <h1>Monitio</h1>
-        <p>Calendar, Events, Notes</p>
         <div ng-view></div>
       </div>
     </div>
