@@ -5,7 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="1174e742f8674dcaa0aa523c3b9cb308" Name="Diagram1" >
-        <EntityTypeShape EntityType="MonitioModel.User" Width="1.5" PointX="2" PointY="1.5" />
+        <EntityTypeShape EntityType="MonitioModel.User" Width="1.5" PointX="0.75" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -40,6 +40,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Monitio.Common\Monitio.Common.csproj">
+      <Project>{ff918f11-d6b0-4b7a-9f32-669e4570fdee}</Project>
+      <Name>Monitio.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Monitio.Model\Monitio.Model.csproj">
+      <Project>{9f72adf8-49f0-422b-a359-221e6f6596b8}</Project>
+      <Name>Monitio.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Monitio.Repository\Monitio.Repository.csproj">
+      <Project>{31c58f55-5f91-4c4a-ad72-ee9214a9c42c}</Project>
+      <Name>Monitio.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
