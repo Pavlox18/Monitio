@@ -1,5 +1,7 @@
 I am not adding fields like id because it should be clear that they are needed :)
 
+Yes, it's clear :)
+
 User:
 	char	name,
 	char	surname,
